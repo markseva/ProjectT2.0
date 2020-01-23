@@ -12,18 +12,6 @@ let init = function() {
     let content = document.getElementById("content");
 
     content.appendChild(btn);
-
-    image = document.createElement("IMG");
-    image.onclick = togglePicture;
-    image.src="Transparent_X.png";
-
-
-
-
-    content.appendChild(image);
-
-
-
 };
 
 let createTable = function () {
@@ -90,57 +78,7 @@ let togglePicture = function () {
     }
 };
 
-let changeBackground = function() {
 
-    let box1= document.getElementById("R11");
-    let box2 = document.getElementById("R12");
-    let box3 = document.getElementById("R13");
-    let box4 = document.getElementById("R21");
-    let box5 = document.getElementById("R22");
-    let box6 = document.getElementById("R23");
-    let box7 = document.getElementById("R31");
-    let box8 = document.getElementById("R32");
-    let box9 = document.getElementById("R33");
-
-    box1.style.backgroundImage = "Transparent_X.png";
-    box2.style.backgroundColor = "blue";
-    box3.style.backgroundcolor = "yellow";
-    box4.style.backgroundColor = "green";
-    box5.style.backgroundColor = "blue";
-    box6.style.backgroundcolor = "yellow";
-    box7.style.backgroundColor = "green";
-    box8.style.backgroundColor = "blue";
-    box9.style.backgroundcolor = "yellow";
-
-
-};
-
-let setOringinal = function(){
-    let box1 = document.getElementById("block1");
-    let box2 = document.getElementById("block2");
-    let box3 = document.getElementById("block3");
-
-
-};
-
-
-
-let addClass = function (id) {
-
-    id.classList.add("blueBigBold");
-
-};
-
-let removeClass = function (id) {
-    id.classList.remove("blueBigBold");
-
-};
-
-let placeIMG = function () {
-
-
-
-}
 
 
 

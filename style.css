@@ -3,7 +3,6 @@ td{
 }
 
 div{
-    background-color: white;
     width: 15%;
     height: 200px;
     margin: 10px;
@@ -11,10 +10,5 @@ div{
     border: 2px solid black;
 }
 
-.blueBigBold{
-    object-fit: cover;
-    background-image: url(Transparent_X.png);
-    background-repeat: no-repeat, repeat;
-    background-color: white;
 
-}
+
