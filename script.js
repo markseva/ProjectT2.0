@@ -5,11 +5,16 @@ let init = function() {
 
   let btn = document.createElement("BUTTON");
 
+  let image = document.getElementById("IMG1");
+
+
+
     btn.innerHTML = "Restart";
     btn.onclick = createTable;
 
-
     let content = document.getElementById("content");
+
+
 
     content.appendChild(btn);
 };
@@ -22,24 +27,15 @@ let createTable = function () {
     let row3 = document.createElement("TR");
 
 
-    let data1 = document.createElement("TD");
-    let data2 = document.createElement("TD");
-    let data3 = document.createElement("TD");
-    let data4 = document.createElement("TD");
-    let data5 = document.createElement("TD");
-    let data6 = document.createElement("TD");
-    let data7 = document.createElement("TD");
-    let data8 = document.createElement("TD");
-    let data9 = document.createElement("TD");
-    data1.id = "R11";
-    data2.id = "R12";
-    data3.id = "R13";
-    data4.id = "R21";
-    data5.id = "R22";
-    data6.id = "R23";
-    data7.id = "R31";
-    data8.id = "R32";
-    data9.id = "R33";
+    let data1 = document.getElementById("IMG1");
+    let data2 = document.getElementById("IMG2");
+    let data3 = document.getElementById("IMG3");
+    let data4 = document.getElementById("IMG4");
+    let data5 = document.getElementById("IMG5");
+    let data6 = document.getElementById("IMG6");
+    let data7 = document.getElementById("IMG7");
+    let data8 = document.getElementById("IMG8");
+    let data9 = document.getElementById("IMG9");
 
     //Create the table with appendages
 
@@ -67,19 +63,30 @@ let createTable = function () {
 
 };
 
+
+    let addClass = function (id) {
+         id.classList.add("ChangeThing");
+
+            };
+
+    let removeClass = function (id) {
+        id.classList.remove("ChangeThing");
+          };
+
+
+let toggleClass = function (id) {
+    id.classList.add("Addpic");
+
+};
+
 let togglePicture = function () {
 
     if (togglePic === true) {
-        image.src = "Transparent_X.png";
+        image.src = "X.png"
         togglePic = false;
     } else {
         image.src = "law.png";
         togglePic = true;
     }
+
 };
-
-
-
-
-
-
