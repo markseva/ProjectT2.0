@@ -1,5 +1,5 @@
 
-div{
+td{
     height: 200px;
     width: 200px;
     margin: 10px;
@@ -12,10 +12,17 @@ div{
 
 .ChangeThing {
     background-image: url("X.png");
-    object-fit: fill;
-    background-repeat: no-repeat;
+
 }
 
 .Addpic{
     background-image: url("X.png");
+}
+
+table{
+    margin: auto;
+}
+
+button{
+    align-content: center;
 }

@@ -2,21 +2,6 @@ togglePic = true;
 
 let init = function() {
 
-
-  let btn = document.createElement("BUTTON");
-
-  let image = document.getElementById("IMG1");
-
-
-
-    btn.innerHTML = "Restart";
-    btn.onclick = createTable;
-
-    let content = document.getElementById("content");
-
-
-
-    content.appendChild(btn);
 };
 
 let createTable = function () {
@@ -27,17 +12,15 @@ let createTable = function () {
     let row3 = document.createElement("TR");
 
 
-    let data1 = document.getElementById("IMG1");
-    let data2 = document.getElementById("IMG2");
-    let data3 = document.getElementById("IMG3");
-    let data4 = document.getElementById("IMG4");
-    let data5 = document.getElementById("IMG5");
-    let data6 = document.getElementById("IMG6");
-    let data7 = document.getElementById("IMG7");
-    let data8 = document.getElementById("IMG8");
-    let data9 = document.getElementById("IMG9");
-
-    //Create the table with appendages
+    let data1 = document.createElement("TD");
+    let data2 = document.createElement("TD");
+    let data3 = document.createElement("TD");
+    let data4 = document.createElement("TD");
+    let data5 = document.createElement("TD");
+    let data6 = document.createElement("TD");
+    let data7 = document.createElement("TD");
+    let data8 = document.createElement("TD");
+    let data9 = document.createElement("TD");
 
     row1.appendChild(data1);
     row1.appendChild(data2);
@@ -61,20 +44,22 @@ let createTable = function () {
     let content = document.getElementById("content");
     content.appendChild(table);
 
+    data1.onclick = addClass(this);
+
 };
 
 
-    let addClass = function (id) {
-         id.classList.add("ChangeThing");
+    let addClass = function(id) {
+            id.classList.add("ChangeThing") ;
 
             };
 
     let removeClass = function (id) {
-        id.classList.remove("ChangeThing");
+        id.classList.remove("Addpic");
           };
 
 
-let toggleClass = function (id) {
+/*let toggleClass = function () {
     id.classList.add("Addpic");
 
 };
@@ -89,4 +74,4 @@ let togglePicture = function () {
         togglePic = true;
     }
 
-};
+};*/
